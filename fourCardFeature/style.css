@@ -92,7 +92,7 @@ h4{
 
 .card h2, .card p{
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10pxgit;
 }
 
 @media (max-width: 1185px){
