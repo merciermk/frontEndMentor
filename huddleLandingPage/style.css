@@ -116,10 +116,12 @@ footer img{
    }
 
    .button{
-      
+    margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
    }
-
+   .attribution{
+       margin-top: 5%;
+   }
   
 }
