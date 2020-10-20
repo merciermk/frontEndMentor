@@ -25,6 +25,7 @@ body{
     width: 45%;
     min-width: 320px;
     height: auto;
+    justify-content: space-around;
 }
 
 
@@ -85,7 +86,7 @@ footer img{
 }
 
 .attribution{
-    margin-top: 5%;
+    margin-top: 2%;
     font-size: 12px;
     text-align: center;
 }
