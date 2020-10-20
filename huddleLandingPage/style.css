@@ -48,6 +48,7 @@ body{
 .right h1, .right p{
     margin-left: 3%;
     margin-right: 3%;
+    max-width: 70%;
 }
 
 .button{
