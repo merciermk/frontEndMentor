@@ -94,7 +94,7 @@ footer img{
     color: #ffffff;
 }
 
-@media screen and (max-width: 727git px){
+@media screen and (max-width: 727px){
     body{
         background-image: url(./img/bg-mobile.svg);
     }
