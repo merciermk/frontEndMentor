@@ -2,7 +2,9 @@
   margin: 0px;
 }
 
+body {}
 
+/* Background */
 .background {
   max-width: 1440px;
   height: 1200px;
@@ -41,45 +43,17 @@
   border-bottom-right-radius: 300px 300px;
 }
 
-.presentationText {
-  order: 3;
-  z-index: 6;
-  margin-left: 5%;
-  margin-right: 3%;
 
-  font-family: 'rubik';
 
-  margin-top: 25%;
-  margin-right: -10%;
-
-  height: 200px;
-  width: 445px;
-  font-size: 16px;
-}
-
-.presentationText h1 {
-  color: hsl(271, 36%, 24%);
-  font-weight: 500;
-  font-size: 35px;
-  margin-bottom: 3%;
-}
-
-.presentationText p {
-  color: hsl(270, 7%, 64%);
-}
 
 /* The phone */
 
 .thePhone {
-  order: 2;
-  margin-left: -4%;
-  margin-right: auto;
-  margin-top: 10%;
+  display: block;
   font-size: 10px;
-  max-width: 228px;
+  width: 228px;
+  height: 480px;
   min-width: 228px;
-  min-height: 480px;
-  max-height: 480px;
   font-family: 'rubik', serif;
   border: 10px solid;
   border-color: white;
@@ -288,4 +262,51 @@
 .sendMessageButton {
   width: 25px;
   height: 25px;
+}
+
+/* Presentation */
+.phoneAndPres {
+  background-color: brown;
+  position: absolute;
+  top: 10%;
+  /* left: 395px; */
+  width: 60%;
+  left: 28.2%;
+
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.presentationText {
+  order: 3;
+  z-index: 6;
+  margin-left: 10%;
+  margin-right: 5%;
+  font-family: 'rubik';
+  height: auto;
+  width: 450px;
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.presentationText h1 {
+  color: hsl(271, 36%, 24%);
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 3%;
+}
+
+.presentationText p {
+  color: hsl(270, 7%, 64%);
+
+}
+
+@media screen and (min-width : 1440px) {
+  .phoneAndPres {
+    left: 395px;
+  }
+
+
 }
