@@ -1,0 +1,5 @@
+version: 2
+main:
+  type: static
+  path: https://github.com/merciermk/frontEndMentor/tree/master/testimonialsGrid
+  spa: false
