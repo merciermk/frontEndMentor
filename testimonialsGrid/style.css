@@ -1,0 +1,137 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: hsl(0, 0%, 81%);
+  font-size: 14px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: white;
+}
+
+/* grid layout */
+.grid {
+  background-color: violet;
+  width: 80%;
+  max-width: 1150px;
+
+  height: auto;
+  margin: 50px auto;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+
+  grid-template: repeat(2, 1fr) / repeat(4, minmax(150px, 1fr));
+  grid-template-areas:
+    "a a b c"
+    "d e e c";
+}
+
+.caseOne {
+  grid-area: a;
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("./instructions/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top left 80%;
+}
+
+.caseTwo {
+  grid-area: b;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.caseThree {
+  grid-area: c;
+  background-color: white;
+}
+
+.caseFour {
+  grid-area: d;
+  background-color: white;
+}
+
+.caseFive {
+  grid-area: e;
+  background-color: hsl(219, 29%, 14%);
+}
+
+/* general inside containers CSS */
+
+.insideContainer {
+  margin: 35px;
+  line-height: 1.3rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.avatar {
+  border-radius: 50%;
+  border: 2px;
+  width: 30px;
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.user {
+  margin-left: 15px;
+}
+
+.header {
+  line-height: 1.2rem !important;
+}
+
+.user-name {
+  font-weight: bolder;
+}
+
+.user-status {
+  opacity: 50%;
+}
+
+.title {
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+
+.text {
+  margin-top: 25px;
+  opacity: 70%;
+}
+
+/* specific containers */
+
+.caseOne .avatar {
+  border: solid 2px;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.caseFive .avatar {
+  border: solid 2px;
+  border-color: hsl(263, 55%, 52%);
+}
+
+.caseThree .insideContainer,
+.caseFour .insideContainer {
+  color: hsl(217, 19%, 35%);
+}
+
+/* media query */
+
+@media screen and (max-width: 855px) {
+  .grid {
+    grid-template: repeat(8, 1fr) / repeat(1, minmax(150px, 1fr));
+    grid-template-areas:
+      "a"
+      "a"
+      "b"
+      "c"
+      "c"
+      "d"
+      "e"
+      "e";
+  }
+}
